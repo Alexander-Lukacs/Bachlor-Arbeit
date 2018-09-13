@@ -1,0 +1,14 @@
+%=========================================
+% 	  Vorgehensweise      		 =
+%=========================================
+\chapter{Vorgehensweise}
+In diesem Kapitel wird zuerst die Aufgabenstellung erkl"art, um zu erfahren was eigentlich gemacht werden soll. Danach wird noch der Weg beschrieben wie man genau vorgegangen ist, um diese Aufgabe zu l"osen.
+
+\section{Aufgabenstellung}
+Gelernte Wortrepr"asentationen (word embeddings) stellen W"orter basierend auf ihren Kontexten als Vektoren dar. Diese Vektoren erfassen die Bedeutung der W"orter, so dass W"orter mit "ahnlicher Bedeutung auf zueinander naheliegende Vektoren abgebildet werden. Zudem erlauben diese Vektoren einfache Arithmetik, subtrahiert man vom Vektor des Wortes \textit{king} den Vektor des Wortes \textit{man} und addiert jenen des Wortes \textit{woman}, erh"alt man einen Vektor in der N"ahe des Vektors des Wortes \textit{queen}.\\
+Die Aufgabe ist, inwiefern sich solche Wortrepr"asentationen eignen, um auf langzeitlichen Dokumentensammlungen, die Ver"anderung unserer Sprache sowie die Ver"anderung von Bedeutungen zu analysieren.
+
+\section{L"osung}
+Zur Vorbereitung der Analyse mussten alle ben"otigten Dateien nach ihrer Jahreszahl aufgeteilt, zuz"uglich mussten Gro"s- und Kleinschreibung sowie die Satzzeichen entfernt werden. Diese vorverarbeiteten Daten wurden in entsprechende Textdokumente gespeichert. Nachdem eine gewisse Zeit vergangen war, wurden die Wortrepr"asentationen f"ur jedes der in der Dokumentensammlung enthaltenen Jahre berechnet und sind in einer Datenbank indexiert und gespeichert worden. Dies bildet die Grundlage der Analyse.
+Nachdem alles in der Datenbank gespeichert war, wurde mit Hilfe von SQL die Daten, nach der Euklidischen Distanz und der Kosinus "Ahnlichkeit, ausgelesen, um zu ermitteln welche W"orter zu einem gesuchten Wort zu finden sind, welche sich in der Sprache sowie in der Bedeutung ver"andert haben.
+%Hier wird erklärt was genau gemacht wurde
