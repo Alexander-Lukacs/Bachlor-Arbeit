@@ -14,7 +14,7 @@ Ein k"unstlich neuronales Netz kann man sich wie ein Graph mit Knoten und Kanten
 \caption[Neuronales Netzwerk]{Aufbau eines Neuronales Netzwerk  \cite{todesco:2018}}
 \end{figure}\\
 %Quelle des Bildes: https://www.hyperkommunikation.ch/lexikon/neuronales_netz.htm
-\textit{"K"unstliche Neuronale Netze weisen Kernkomponenten oder Grundbausteine auf, die sich in allen Netzwerktypen wiederfinden. Die statischen Kernkomponenten geben KNN die r"aumliche Gestalt bzw. Struktur."}
+\textit{"K"unstliche Neuronale Netze weisen Kernkomponenten oder Grundbausteine auf, die sich in allen Netzwerktypen wiederfinden. Die statischen Kernkomponenten geben  \acs{KNN} die r"aumliche Gestalt bzw. Struktur."}
 \cite{Strecker97}
 
 
@@ -28,9 +28,8 @@ Ein Algorithmus des Word Embeddings ist der sogenannte word2Vec-Algorithmus. Die
 
 Wie man im Bild sehen kann, sind die W"orter deren Bedeutung "ahnlich sind nahe beieinander. Auch wenn es nicht immer mit allen W"ortern richtig ist. 
 
-\section{Zusammenhang}
-
 %Quelle des Buches: Machine Learning mit Python 
-%\section{Zusammenhang}
-
 % Quelle: http://geb.uni-giessen.de/geb/volltexte/2004/1697/pdf/Apap_WI_1997_10.pdf
+\pagebreak
+\section{Zusammenhang von Word Embeddings und \acs{KNN}}
+Word2vec benutzt Modelle, die verwendet werden um Word Embeddings zu erstellen. Diese Modelle sind flache und beliebig-schichtige neuronale Netze, die darauf trainiert sind, sprachliche Kontexte von W"ortern zu rekonstruieren. Als Eingabe wird eine gro"ser Korpus von Texten benutzt, daraus wird ein Vektorraum erzeugt, der typischerweise aus mehreren hundert Dimensionen besteht, wobei jedem eindeutigen Wort im Korpus ein entsprechender Vektor im Raum zugeordnet wird. Wortvektoren werden in dem Vektorraum positioniert, so dass W"orter, die gemeinsame Kontexte in dem Korpus teilen, in dem Raum nahe beieinander angeordnet sind.
